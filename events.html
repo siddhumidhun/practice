@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>EVENTS</title>
+        <script>
+            function load()
+            {
+                document.images["img1"].src="images/shrink.png";
+            }
+            function mouseover()
+            {
+                document.images["img1"].src="images/expand.png";
+            }
+            function mouseout()
+            {
+                document.images["img1"].src="images/shrink.png";
+            }
+        </script>
+    </head>
+    <body onload="load()">
+        <img name="img1" onmouseover="mouseover()" onmouseout="mouseout()">
+    </body>
+</html>

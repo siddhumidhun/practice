@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>LOOPING</title>
+    </head>
+    <body>
+        <script language="JavaScript" type="text/javascript">
+            var i;
+            var num=parseInt(prompt("enter a number.."));
+            var sum=0;
+            for(i=1;i<=num;i++)
+            {
+                if(i%2==0)                           //for loop
+                {
+                    sum+=i;
+                }
+            }
+            document.write(sum);
+
+            
+            
+            var count=0;
+            while(num>0)
+            {
+                num=Math.trunc(num/10);              //while loop
+                count++;
+            }
+            document.write(count);
+
+           
+           
+            var actualpin="3456"
+            var count=0;
+            do{
+                var pin=prompt("Enter a pin number..");
+                count++;
+            }while(pin!=actualpin && count<3);
+            if(pin==actualpin)
+            {                                               //do-while
+                document.write("Welcome user");
+            }
+            else{
+                document.write("Account locked");
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUNCTION</title>
+    <script language="javascript" type="text/javascript">
+        function sayhello(name,age)
+        {
+            if(name == ""||age == "")
+            alert("Please enter a value")
+        else
+        document.write(name+" is" + age+" years old");
+        }
+
+    </script>
+</head>
+<body>
+    <p>click the button to see what happens</p>
+    <form>
+        FIRST NAME:<input name="t1" placeholder="Name"><br/>
+        AGE       :<input name="t2" placeholder="age"><br/>
+        <input type="button" onclick="sayhello(t1.value,t2.value)" value="click here">
+    </form>
+</body>
+</html>

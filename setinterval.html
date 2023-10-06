@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TIME INTERVAL</title>
+    <script type="text/javascript">
+        var arr = ["ash1.jpg", "ash2.jpg", "ash3.jpg", "expand.png"];
+        var i = 0;
+        var ref;
+
+        function setlib() {
+            document.images[0].src = arr[i];
+            i++;
+            if (i >3) {
+                i = 0;
+            }
+        }
+
+        function start() {
+            ref = setInterval(setlib, 1000); // Call the function directly without quotes
+        }
+
+        function stop() {
+            clearInterval(ref);
+        }
+    </script>
+</head>
+<body onload="start()">
+    <img src="images/ash1.jpg" name="img1" onmouseover="stop()" onmouseout="start()">
+</body>
+</html>

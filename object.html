@@ -1,0 +1,29 @@
+<html>
+<head>
+    
+    <title>object</title>
+    
+</head>
+<body>
+    <script language="JavaScript" type="text/javascript" >
+        var car={
+            "model":"BMW",
+            "color":"red",
+            "type":"ameriacn"
+        };
+        document.write(car.model);      //parsing the object
+        document.write("<br/>");
+        document.write(car.color);
+        document.write("<br/>");
+        document.write(car.type);
+        document.write("<br/>");
+
+        var text = "";
+        var x;                            //parsing using appending in a new string
+        for(x in car) {
+            text += car[x]+",";
+        }
+        document.write(text);
+        </script>
+</body>
+</html>
