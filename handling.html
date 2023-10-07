@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>
+            ERROR HANDLING
+        </title>
+        <script language="JavaScript" type="text/javascript">
+            function see()
+            {
+                var a=100
+                try{
+                    var s=a.toUpperCase();                      //if this part is commented there is no error message
+                    alert("entered value is " + a);
+                }
+                catch(e){
+                    alert("error")
+                }
+                finally{
+                    alert("finally always get executed");
+                }
+            }
+        </script>
+    </head>
+    <BODY>
+        <input type="button" value="click me" onclick="see()">
+    </BODY>
+</html>
